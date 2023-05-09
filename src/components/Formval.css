@@ -1,0 +1,23 @@
+.App{
+    width: 45%;
+    height: 420px;
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: aqua;
+    position :absolute;
+    text-align: center;
+    left: 22%;
+    
+
+}
+
+button{
+   background-color:red;
+   border: none;
+   height: 25px;
+   width: 27%;
+   border-radius: 7px;
+   cursor: pointer;
+}
+
+
