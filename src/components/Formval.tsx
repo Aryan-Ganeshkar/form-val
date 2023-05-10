@@ -1,35 +1,42 @@
 import { useState } from "react"
-import './Formval.css';
+import './Formval.css'
+
 const Formval = () => {
+
+    const arrayObj = [{
+      id:'name',
+      value : 1
+    }]
 
     const education = ['bca' , 'mca' , 'bba' , 'be' , 'ba']
 
-  const returnmap = education.map((setData) => {
-    return(
-      <option>
-          {setData}
-      </option>
-    )
-  })
-
-  const submitFrom = () => {
-
-    console.log('name', fname);
-    console.log('email' , femail);
-    console.log('num' , mnum);
-    console.log('password', pass);
-    
-  }
-
-  const [fname, setFname] = useState('');
-
-  const [femail , setFemail] = useState('');
-
-  const [mnum , setMnum] = useState('');
-
-  const [pass , setPass] = useState('');
-
-  const [data , setData] = useState([]);
+    const returnmap = education.map((setData) => {
+      return(
+        <option>
+            {setData}
+        </option>
+      )
+    })
+  
+    const submitFrom = () => {
+  
+      console.log('name', fname);
+      console.log('email' , femail);
+      console.log('num' , mnum);
+      console.log('password', pass);
+      
+    }
+  
+    const [fname, setFname] = useState('');
+  
+    const [femail , setFemail] = useState('');
+  
+    const [mnum , setMnum] = useState('');
+  
+    const [pass , setPass] = useState('');
+  
+    const [items , setItems] = useState([]);
+  
 
     return(
         <div className="App">
